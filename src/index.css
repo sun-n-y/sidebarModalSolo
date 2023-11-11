@@ -111,3 +111,83 @@ h2 {
 .modal-close-btn:hover {
     color: rgb(221, 84, 84);
 }
+
+/* sidebar */
+
+.sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    padding: 1rem;
+    row-gap: 1rem;
+    transition: all .3s ease;
+    transform: translateX(-100%);
+}
+
+.show-sidebar {
+    transform: translateX(0);
+}
+
+.sidebar-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+h3 {
+    font-size: 2rem;
+    text-transform: capitalize;
+    letter-spacing: 1px;
+}
+
+.sidebar-close-btn {
+    background: transparent;
+    border-color: transparent;
+    font-size: 2rem;
+    color: red;
+    cursor: pointer;
+}
+
+.links {
+    display: flex;
+    row-gap: 2rem;
+    flex-direction: column;
+}
+
+.links li {
+    list-style-type: none;
+}
+
+.links a {
+    display: flex;
+    column-gap: 1rem;
+    text-decoration: none;
+    color: green;
+    text-transform: capitalize;
+    font-size: 1.5rem;
+}
+
+.socials {
+    display: flex;
+    column-gap: 1rem;
+    justify-content: center;
+    padding-bottom: 2rem;
+    font-size: 1.5rem;
+    list-style-type: none;
+}
+
+.socials svg {
+    color: green;
+}
+
+@media screen and (min-width:678px) {
+    .sidebar {
+        width: 70%;
+        max-width: 400px;
+    }
+}

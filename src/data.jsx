@@ -37,7 +37,7 @@ export const links = [
   },
 ];
 
-export const social = [
+export const socials = [
   {
     id: 1,
     url: '#',
@@ -61,6 +61,6 @@ export const social = [
   {
     id: 5,
     url: '#',
-    icon: <FaTwitter />,
+    icon: <FaBehance />,
   },
 ];
